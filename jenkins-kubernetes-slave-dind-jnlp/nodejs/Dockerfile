@@ -1,4 +1,4 @@
-FROM registry.cn-beijing.aliyuncs.com/acs-sample/jenkins-kubernetes-slave-dind:1.0
+FROM yuleaugustine/jenkins-kubernetes-slave-dind:latest
 
 RUN groupadd --gid 1000 node \
   && useradd --uid 1000 --gid node --shell /bin/bash --create-home node
